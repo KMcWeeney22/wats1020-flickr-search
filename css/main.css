@@ -2,7 +2,7 @@
    Author's custom styles
    ========================================================================== */
 
-/* Enable these styles if you wish to go into a grid layout.
+/*Enable these styles if you wish to go into a grid layout.
 ul#images li {
     width: 120px;
     height: auto;
@@ -22,7 +22,12 @@ ul#images li button {
 }
 
 --- End of grid layout styles. */
-
+/* textured grey background */
+body {
+  background-image: url('https://s-media-cache-ak0.pinimg.com/originals/61/ca/f8/61caf83b711dc1fc6335a41e01b85429.png');
+  background-attachment: fixed, scroll;
+  background-repeat: no-repeat;
+}
 ul#images {
     list-style-type: none;
 }
@@ -41,7 +46,27 @@ ul#images .placeholder {
 
 hr {
     clear:both;
+/* font color changed in new image list after search */
 }
+/* min height created so photo grid doesnt get messed up. most photos have different heights */
+#image-list{
+  min-height: 600px;
+  color: white;
+/* link color changed after search */
+}
+#image-list a{
+  color: black;
+}
+#image-list a:hover{
+  color: white;
+  text-decoration: underline;
+}
+/* made room inbetween text and modal button */
+#modalButton{
+  margin-left: 10px;
+}
+
+
 
 
 
