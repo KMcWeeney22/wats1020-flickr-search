@@ -33,6 +33,7 @@ var searchImages = function(tags) {
         
         var newTitle = $('<p class= "image-title">').html(item.title).appendTo(newList);
         var newDate = $('<p class = "image-date">').text(item.date_taken).appendTo(newList);
+        var author = $('<p class = "author">').text(item.author).appendTo(newList);
         var newDescription = $('<p class="image-description">').html(item.description).appendTo(newList);
         // link refrencing where to view photo on flickr
         var newLink = $('<a>').attr('href', item.link).text('View on Flickr!').appendTo(newList);
